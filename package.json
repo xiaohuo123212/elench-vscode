@@ -1,0 +1,57 @@
+{
+  "name": "elench",
+  "displayName": "Elench",
+  "description": "Elench（Elenchus）语法高亮：成本契约语言 .tu / .eln。命令 `elench` 由 elench-lang 提供。",
+  "version": "0.7.0",
+  "publisher": "xiaohuo123212",
+  "license": "Apache-2.0",
+  "icon": "./icon.png",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "elench",
+    "elenchus",
+    "cost",
+    "complexity",
+    "contract",
+    "elench-lang"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuo123212/elench.git"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "elench",
+        "aliases": [
+          "Elench",
+          "elench"
+        ],
+        "extensions": [
+          ".eln",
+          ".tu"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "elench",
+        "scopeName": "source.elench",
+        "path": "./syntaxes/eln.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "elench-file-icons",
+        "label": "Elench 文件图标",
+        "path": "./fileicons/elench-icon-theme.json"
+      }
+    ]
+  }
+}
